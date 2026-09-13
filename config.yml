@@ -1,0 +1,79 @@
+# Configuration for the weekly FCC ULS pull.
+#
+# Each entry under `targets` is one independent pull: it resolves its own
+# source file(s) from the FCC's public bulk-data mirror, then filters the
+# records down to what you actually want.
+#
+# IMPORTANT — read this before the first real run:
+# The exact FCC zip filenames for the "amateur" target are well-documented
+# and stable (l_amat.zip / l_am_<day>.zip). The filename(s) for the
+# "land_mobile_private" target are NOT hardcoded — they're auto-discovered
+# at run time from the FCC's directory listing by matching `file_match`
+# against whatever is actually published (see scripts/fetch_uls.py:
+# discover_filename()). This was a deliberate choice: this file could not
+# be verified against a live FCC connection from the sandbox that built it
+# (outbound access to fcc.gov/data.fcc.gov is blocked there), so guessing
+# an exact filename risked shipping something silently wrong. Check the
+# first GitHub Actions run's log for a line like
+# "resolved land_mobile_private -> l_LMpriv.zip" and, if it looks off,
+# tighten `file_match` below.
+
+state: NV
+
+# Optional second-level filter: if non-empty, only keep records whose EN.city
+# (uppercased, trimmed) is in this list, in addition to state == NV. Leave
+# empty ([]) to keep every NV record statewide. Las Vegas-area addresses in
+# ULS aren't consistently tagged with a county field, so this is a city
+# allow-list as a proxy for Clark County — adjust freely.
+clark_county_cities:
+  - LAS VEGAS
+  - NORTH LAS VEGAS
+  - HENDERSON
+  - BOULDER CITY
+  - MESQUITE
+  - LAUGHLIN
+  - PAHRUMP        # technically Nye County, but commonly served by the same LV-area licensees; remove if you want strict Clark-only
+  - JEAN
+  - SLOAN
+  - INDIAN SPRINGS
+  - MOAPA
+  - LOGANDALE
+  - OVERTON
+  - BUNKERVILLE
+  - GOODSPRINGS
+  - NELLIS AFB
+  - NELLIS AFB (LAS VEGAS)
+
+targets:
+  - name: amateur
+    # Complete (full snapshot, refreshed weekly) and daily transaction files.
+    # These filenames are stable and documented across every third-party ULS
+    # tool checked while building this: l_amat.zip / l_am_<day>.zip.
+    complete_file: l_amat.zip
+    daily_prefix: l_am_
+    file_match: null          # not used when complete_file/daily_prefix are set explicitly
+    radio_service_codes: []   # empty = keep all (the amateur file only contains ham records anyway)
+
+  - name: land_mobile_private
+    # Left unresolved on purpose -- see the note above. discover_filename()
+    # will pick the first filename under /complete/ and /daily/ containing
+    # any of these substrings (case-insensitive).
+    complete_file: null
+    daily_prefix: null
+    file_match:
+      complete: ["lmpriv", "lm_priv", "l_lm", "privland", "private"]
+      daily: ["lmpriv", "lm_priv", "l_lm", "priv"]
+    # Public Safety Pool + Industrial/Business Pool, conventional & trunked.
+    # Source: https://www.fcc.gov/node/189710 (fetched directly, not guessed).
+    radio_service_codes:
+      - PW   # Public Safety Pool, Conventional
+      - YW   # Public Safety Pool, Trunked
+      - IG   # Industrial/Business Pool, Conventional
+      - IK   # Industrial/Business Pool, Commercial, Conventional
+      - YG   # Industrial/Business Pool, Trunked
+      - YK   # Industrial/Business Pool, Commercial, Trunked
+
+# Daily transaction files are attempted for every one of these weekday
+# abbreviations each run; any that 404 are just skipped. This sidesteps
+# needing to know FCC's exact "6-day sequence" convention precisely.
+daily_weekdays: [sun, mon, tue, wed, thu, fri, sat]
