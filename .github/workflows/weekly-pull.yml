@@ -1,0 +1,50 @@
+name: Weekly FCC ULS pull (Nevada / Clark County)
+
+on:
+  schedule:
+    # Sundays 18:00 UTC (11:00 Pacific Standard / 10:00 Pacific Daylight).
+    # FCC's own weekly database refresh is published Sunday mid-morning ET,
+    # so this gives it a comfortable head start before we pull.
+    - cron: "0 18 * * 0"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run weekly pull
+        run: python scripts/fetch_uls.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "fcc-uls-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes this run."
+          else
+            git commit -m "Weekly FCC ULS pull: $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - name: Upload run artifacts (for debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fcc-uls-data-${{ github.run_id }}
+          path: data/
+          retention-days: 14
