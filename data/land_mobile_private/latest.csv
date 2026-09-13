@@ -1,1 +1,11 @@
 call_sign,radio_service_code,license_status,grant_date,effective_date,last_action_date,cancellation_date,expired_date,entity_name,first_name,last_name,city,state,zip_code,unique_system_identifier,uls_file_number,source_file,source_day
+WSOD792,IG,A,09/08/2026,09/08/2026,09/08/2026,,09/08/2036,WESTERN PACIFIC PRECAST,,,SLOAN,NV,89054,5354984,0012092018,l_lp_tue.zip,tue
+WSOD820,IG,A,09/09/2026,09/09/2026,09/09/2026,,09/09/2036,CCSD Dr. C. Owen Roundy Elementary School,,,Las Vegas,NV,89146,5355031,0012177226,l_lp_wed.zip,wed
+WQYP281,IG,A,09/11/2026,09/11/2026,09/11/2026,,11/28/2036,Thatcher Company of Nevada,,,Henderson,NV,89014,3869896,0012178539,l_lp_fri.zip,fri
+WQGT774,PW,A,02/23/2017,09/11/2026,09/11/2026,,04/13/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,891064511,2901456,0012161657,l_lp_fri.zip,fri
+WQGT771,PW,A,03/08/2017,09/11/2026,09/11/2026,,04/13/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,891064511,2901453,0012161665,l_lp_fri.zip,fri
+WQXX653,IG,E,07/07/2016,07/07/2016,09/12/2026,09/12/2026,07/07/2026,Falcon Nano Inc,,,North Las Vegas,NV,89032,3828297,0007323122,l_lp_sat.zip,sat
+WQXX904,IG,E,07/11/2016,07/11/2016,09/12/2026,09/12/2026,07/11/2026,Hyperloop,,,North Las Vegas,NV,89081,3828947,0007329581,l_lp_sat.zip,sat
+WIK331,IG,A,09/12/2026,09/12/2026,09/12/2026,,10/21/2036,"Comm Enterprises, LLC",,,Las Vegas,NV,89119,1645052,R158941,l_lp_sat.zip,sat
+WIK270,IG,A,09/12/2026,09/12/2026,09/12/2026,,11/20/2036,"Comm Enterprises, LLC",,,Las Vegas,NV,89119,1645019,R158938,l_lp_sat.zip,sat
+WEC934,IG,A,09/12/2026,09/12/2026,09/12/2026,,10/18/2036,"Comm Enterprises, LLC",,,Las Vegas,NV,89119,1644273,R158942,l_lp_sat.zip,sat
