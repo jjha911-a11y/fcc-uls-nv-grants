@@ -50,4 +50,4 @@ jobs:
         with:
           name: fcc-uls-data-${{ github.run_id }}
           path: data/
-          retention-days: 144
+          retention-days: 14
