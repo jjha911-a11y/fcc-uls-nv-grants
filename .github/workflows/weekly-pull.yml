@@ -2,11 +2,12 @@ name: Weekly FCC ULS pull (Nevada / Clark County)
 
 on:
   schedule:
-    # Sundays 18:00 UTC (11:00 Pacific Standard / 10:00 Pacific Daylight).
-    # FCC's own weekly database refresh is published Sunday mid-morning ET,
-    # so this gives it a comfortable head start before we pull.
     - cron: "0 18 * * 0"
-  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+  workflow_dispatch: {}
+
+concurrency:
+  group: fcc-uls-weekly-pull
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -38,6 +39,8 @@ jobs:
             echo "No data changes this run."
           else
             git commit -m "Weekly FCC ULS pull: $(date -u +%Y-%m-%d)"
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
 
@@ -47,4 +50,4 @@ jobs:
         with:
           name: fcc-uls-data-${{ github.run_id }}
           path: data/
-          retention-days: 14
+          retention-days: 144
