@@ -54,7 +54,7 @@ targets:
     file_match: null          # not used when complete_file/daily_prefix are set explicitly
     radio_service_codes: []   # empty = keep all (the amateur file only contains ham records anyway)
 
-    - name: land_mobile_private
+- name: land_mobile_private
     complete_file: l_LMpriv.zip     # confirmed filename for the full nationwide snapshot
     daily_prefix: l_lp_             # confirmed from FCC's own /daily/ directory listing
     file_match: null                # no longer needed now that the prefix is known
