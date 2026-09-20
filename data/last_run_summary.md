@@ -1,4 +1,4 @@
-# FCC ULS weekly pull — 2026-09-13
+# FCC ULS weekly pull — 2026-09-20
 
-- **amateur**: 32 records
-- **land_mobile_private**: 10 records
+- **amateur**: 21 records
+- **land_mobile_private**: 3 records
