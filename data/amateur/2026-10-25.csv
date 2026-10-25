@@ -1,0 +1,9 @@
+call_sign,radio_service_code,license_status,grant_date,effective_date,last_action_date,cancellation_date,expired_date,entity_name,first_name,last_name,city,state,zip_code,unique_system_identifier,uls_file_number,source_file,source_day
+K1NV,HV,A,10/17/2026,10/19/2026,10/19/2026,,12/04/2036,"SCHUMACHER, JON M",JON,SCHUMACHER,PAHRUMP,NV,89048,234714,0012225463,l_am_mon.zip,mon
+KI7HPY,HA,A,10/20/2026,10/20/2026,10/20/2026,,10/20/2036,"Anderson, Mary Ann J",Mary Ann,Anderson,Pahrump,NV,89061,3857196,0007506284,l_am_tue.zip,tue
+KI7HPZ,HA,A,10/20/2026,10/20/2026,10/20/2026,,10/20/2036,"Anderson, Barton D",Barton,Anderson,Pahrump,NV,89061,3857197,0007506285,l_am_tue.zip,tue
+KD2MHU,HA,A,10/20/2026,10/20/2026,10/20/2026,,11/28/2036,"Rodriguez, Luis A",Luis,Rodriguez,Las Vegas,NV,89108,3869879,0007570262,l_am_tue.zip,tue
+KR6D,HV,A,10/20/2026,10/20/2026,10/20/2026,,12/30/2036,"Becker, Thomas C",Thomas,Becker,Las Vegas,NV,89129,3878509,,l_am_tue.zip,tue
+KM6DOC,HA,A,10/21/2026,10/21/2026,10/21/2026,,10/21/2036,"Ansari, Adam H",Adam,Ansari,Las Vegas,NV,89148,3824137,0007313170,l_am_wed.zip,wed
+KC7TUH,HA,A,10/22/2026,10/22/2026,10/22/2026,,12/21/2036,"BROBECK, TERRY K",TERRY,BROBECK,Las Vegas,NV,89108,476463,0012227168,l_am_thu.zip,thu
+KC7CIX,HA,E,10/21/2014,11/20/2018,10/24/2026,10/24/2026,10/21/2024,"STANLEY JR, KENNETH P",KENNETH,STANLEY,LAS VEGAS,NV,89183,465632,0001689681,l_am_sat.zip,sat

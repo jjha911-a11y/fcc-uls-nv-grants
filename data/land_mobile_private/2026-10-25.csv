@@ -1,0 +1,11 @@
+call_sign,radio_service_code,license_status,grant_date,effective_date,last_action_date,cancellation_date,expired_date,entity_name,first_name,last_name,city,state,zip_code,unique_system_identifier,uls_file_number,source_file,source_day
+WSJB895,YG,A,07/11/2025,09/15/2025,10/21/2026,,07/11/2035,THE KROGER CO.,,,HENDERSON,NV,89052,5163919,0011695366,l_lp_wed.zip,wed
+WSOS327,IG,A,10/21/2026,10/21/2026,10/21/2026,,10/21/2036,Doral Academy of Nevada - Pebble Campus,,,Las Vegas,NV,89139,5373908,0012148544,l_lp_wed.zip,wed
+WSOS329,IG,A,10/21/2026,10/21/2026,10/21/2026,,10/21/2036,MB BC LLC,,,LAS VEGAS,NV,89113,5373910,0012148106,l_lp_wed.zip,wed
+WQGC363,IG,A,12/07/2016,10/22/2026,10/22/2026,,12/06/2026,Grandview at Las Vegas Owners Association,,,Las Vegas,NV,89183,2865039,0012154795,l_lp_thu.zip,thu
+WQGG926,PW,A,12/20/2016,12/31/2025,10/22/2026,,01/16/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,891064511,2873563,0011819876,l_lp_thu.zip,thu
+WSLT821,IG,A,02/23/2026,10/23/2026,10/23/2026,,02/23/2036,CCSD Cyril Wengert Elementary School,,,Las Vegas,NV,89142,5258812,0012154418,l_lp_fri.zip,fri
+WQHJ504,PW,A,07/28/2017,10/23/2026,10/23/2026,,08/14/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,891064511,2937117,0012207408,l_lp_fri.zip,fri
+WQGI729,PW,A,12/19/2016,10/23/2026,10/23/2026,,01/30/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,89106,2877296,0012207398,l_lp_fri.zip,fri
+WQGG926,PW,A,12/20/2016,10/23/2026,10/23/2026,,01/16/2027,Clark County Regional Flood Control District,,,Las Vegas,NV,891064511,2873563,0012207410,l_lp_fri.zip,fri
+WQGC363,IG,A,10/24/2026,10/24/2026,10/24/2026,,12/06/2036,Grandview at Las Vegas Owners Association,,,Las Vegas,NV,89183,2865039,0012154795,l_lp_sat.zip,sat
