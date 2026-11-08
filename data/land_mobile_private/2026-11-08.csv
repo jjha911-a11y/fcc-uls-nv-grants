@@ -1,0 +1,8 @@
+call_sign,radio_service_code,license_status,grant_date,effective_date,last_action_date,cancellation_date,expired_date,entity_name,first_name,last_name,city,state,zip_code,unique_system_identifier,uls_file_number,source_file,source_day
+WQGH999,PW,A,11/03/2026,11/03/2026,11/03/2026,,01/24/2037,City Of Boulder City Municipal Airport - AWOS LINK,,,BOULDER CITY,NV,89005,2875882,0002882380,l_lp_tue.zip,tue
+WSOX991,IG,A,11/04/2026,11/04/2026,11/04/2026,,11/04/2036,"BSR 6276, LLC.",,,Las Vegas,NV,89113,5380998,0012242728,l_lp_wed.zip,wed
+WSOY541,IG,A,11/04/2026,11/04/2026,11/04/2026,,11/04/2036,"Allegiant Travel Company, DBA Allegiant Air LLC",,,LAS VEGAS,NV,89144,5381459,0012238114,l_lp_wed.zip,wed
+WIJ362,IG,A,11/04/2026,11/04/2026,11/04/2026,,01/21/2037,"Comm Enterprises, LLC",,,Las Vegas,NV,89119,1644935,0007518329,l_lp_wed.zip,wed
+WSOZ779,IG,A,11/05/2026,11/05/2026,11/05/2026,,11/05/2036,"Sun Communications, Inc.",,,Las Vegas,NV,89103,5382739,0012172129,l_lp_thu.zip,thu
+WSOV609,IG,A,10/31/2026,10/31/2026,11/07/2026,,10/31/2036,CCSD Patricia A. Bendorf Elementary School,,,Las Vegas,NV,89147,5378437,0012238107,l_lp_sat.zip,sat
+WSOU299,IG,A,10/28/2026,10/28/2026,11/07/2026,,10/28/2036,"Haas Automation, Inc.",,,Henderson,NV,89044,5376803,0012230018,l_lp_sat.zip,sat

@@ -1,11 +1,8 @@
 call_sign,radio_service_code,license_status,grant_date,effective_date,last_action_date,cancellation_date,expired_date,entity_name,first_name,last_name,city,state,zip_code,unique_system_identifier,uls_file_number,source_file,source_day
-WSJB895,YG,A,07/11/2025,09/15/2025,10/25/2026,,07/11/2035,THE KROGER CO.,,,HENDERSON,NV,89052,5163919,0011695366,l_lp_sun.zip,sun
-WSHA877,IG,A,02/07/2025,10/27/2026,10/27/2026,,02/07/2035,4Wall Entertainment Inc.,,,LAS VEGAS,NV,89118,5089714,0012156363,l_lp_tue.zip,tue
-WQNS830,IG,A,05/12/2021,01/28/2026,10/27/2026,,05/12/2031,Boyd Gaming Corporation dba Valley Forge Casino Resort,,,Las Vegas,NV,89118,3288640,0011800676,l_lp_tue.zip,tue
-WSKD593,IG,A,09/23/2025,09/23/2025,10/28/2026,,09/23/2035,SUMMIT FIRE & SECURITY LLC,,,LAS VEGAS,NV,89118,5201960,0011756816,l_lp_wed.zip,wed
-WSOU299,IG,A,10/28/2026,10/28/2026,10/28/2026,,10/28/2036,"Haas Automation, Inc.",,,Henderson,NV,89044,5376803,0012230018,l_lp_wed.zip,wed
-WSLT821,IG,A,02/23/2026,10/23/2026,10/28/2026,,02/23/2036,CCSD Cyril Wengert Elementary School,,,Las Vegas,NV,89142,5258812,0012154418,l_lp_wed.zip,wed
-WSOI633,IG,A,09/23/2026,09/23/2026,10/28/2026,,09/23/2036,Southwest Gas Corporation,,,Las Vegas,NV,89113,5361752,0012064679,l_lp_wed.zip,wed
-WSOS327,IG,A,10/21/2026,10/21/2026,10/28/2026,,10/21/2036,Doral Academy of Nevada - Pebble Campus,,,Las Vegas,NV,89139,5373908,0012148544,l_lp_wed.zip,wed
-WSOU415,IG,A,10/28/2026,10/28/2026,10/28/2026,,10/28/2036,Beehive Internal Medicine,,,Henderson,NV,89044,5377026,0012157587,l_lp_wed.zip,wed
-WSOV609,IG,A,10/31/2026,10/31/2026,10/31/2026,,10/31/2036,CCSD Patricia A. Bendorf Elementary School,,,Las Vegas,NV,89147,5378437,0012238107,l_lp_sat.zip,sat
+WQGH999,PW,A,11/03/2026,11/03/2026,11/03/2026,,01/24/2037,City Of Boulder City Municipal Airport - AWOS LINK,,,BOULDER CITY,NV,89005,2875882,0002882380,l_lp_tue.zip,tue
+WSOX991,IG,A,11/04/2026,11/04/2026,11/04/2026,,11/04/2036,"BSR 6276, LLC.",,,Las Vegas,NV,89113,5380998,0012242728,l_lp_wed.zip,wed
+WSOY541,IG,A,11/04/2026,11/04/2026,11/04/2026,,11/04/2036,"Allegiant Travel Company, DBA Allegiant Air LLC",,,LAS VEGAS,NV,89144,5381459,0012238114,l_lp_wed.zip,wed
+WIJ362,IG,A,11/04/2026,11/04/2026,11/04/2026,,01/21/2037,"Comm Enterprises, LLC",,,Las Vegas,NV,89119,1644935,0007518329,l_lp_wed.zip,wed
+WSOZ779,IG,A,11/05/2026,11/05/2026,11/05/2026,,11/05/2036,"Sun Communications, Inc.",,,Las Vegas,NV,89103,5382739,0012172129,l_lp_thu.zip,thu
+WSOV609,IG,A,10/31/2026,10/31/2026,11/07/2026,,10/31/2036,CCSD Patricia A. Bendorf Elementary School,,,Las Vegas,NV,89147,5378437,0012238107,l_lp_sat.zip,sat
+WSOU299,IG,A,10/28/2026,10/28/2026,11/07/2026,,10/28/2036,"Haas Automation, Inc.",,,Henderson,NV,89044,5376803,0012230018,l_lp_sat.zip,sat
